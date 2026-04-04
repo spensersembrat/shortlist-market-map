@@ -1,0 +1,58 @@
+---
+description: Add a new company to the Market Map
+globs: data/companies.json
+alwaysApply: false
+---
+
+# Add Company to Market Map
+
+When the user asks to add a company to the market map, follow these steps:
+
+## Expected Input Format
+
+The user will provide some or all of:
+- **Company name** (required)
+- **Sector** (required) — must be one of: Consumer, Infrastructure, Data & Analytics, Enterprise: Horizontal, Enterprise: Vertical, Security, Prosumer, Robotics, DevOps & MLOps, Agents
+- **Category** (required) — must match an existing category within the chosen sector (see list below)
+- **Shortlist URL** (optional) — defaults to `https://shortlistjobs.com/companies/{slug}` where slug is the lowercased, hyphenated company name
+
+## Valid Sectors and Categories
+
+- **Consumer**: Entertainment, Social, Music, Education, Gaming
+- **Infrastructure**: Models, Compute, Vector DBs
+- **Data & Analytics**: Data Ops, BI & Insights, Analytics
+- **Enterprise: Horizontal**: Sales, Marketing, Design, Engineering
+- **Enterprise: Vertical**: Healthcare, Legal, Finance
+- **Security**: AI Safety, Privacy, Compliance
+- **Prosumer**: Search, Video, Image, 3D & AR
+- **Robotics**: Humanoid, Industrial, Autonomous
+- **DevOps & MLOps**: ML Platform, Deployment, Monitoring
+- **Agents**: Coding, Task Automation, Customer
+
+## Steps
+
+1. Open `data/companies.json`
+2. Create a new entry with this schema:
+   ```json
+   {
+     "name": "Company Name",
+     "sector": "Sector Name",
+     "category": "Category Name",
+     "shortlistUrl": "https://shortlistjobs.com/companies/company-slug"
+   }
+   ```
+3. Insert the entry in the correct position — group it with other companies in the same sector and category
+4. Save the file
+
+## Example Prompt
+
+> Add company: Anthropic, Infrastructure, Models, https://shortlistjobs.com/companies/anthropic
+
+## Bulk Add
+
+Users may provide multiple companies at once. Add each one following the same rules.
+
+> Add companies:
+> - Notion AI, Enterprise: Horizontal, Engineering
+> - Vercel, Infrastructure, Compute
+> - Scale AI, Data & Analytics, Data Ops
