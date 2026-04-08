@@ -5,12 +5,14 @@ export const SECTOR_ORDER: string[] = [
   "Enterprise: Horizontal",
   "Infrastructure",
   "Enterprise: Vertical",
-  "Prosumer",
-  "DevOps & MLOps",
-  "Data & Analytics",
+  "Hardware & Deep Tech",
+  "Fintech",
   "Security",
-  "Robotics",
+  "Data & Analytics",
   "Agents",
+  "Prosumer",
+  "Robotics",
+  "DevOps & MLOps",
 ];
 
 export const SECTOR_COLORS: Record<string, string> = {
@@ -24,6 +26,8 @@ export const SECTOR_COLORS: Record<string, string> = {
   Robotics: "#d9668c",
   "DevOps & MLOps": "#73a6d9",
   Agents: "#9973bf",
+  Fintech: "#e5c040",
+  "Hardware & Deep Tech": "#d94f4f",
 };
 
 export function sectorToSlug(name: string): string {

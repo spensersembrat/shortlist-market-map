@@ -198,7 +198,8 @@ export default function Toolbar({
           const short = sector
             .replace("Enterprise: ", "")
             .replace("Data & Analytics", "Data")
-            .replace("DevOps & MLOps", "DevOps");
+            .replace("DevOps & MLOps", "DevOps")
+            .replace("Hardware & Deep Tech", "Hardware");
           return (
             <button
               key={sector}

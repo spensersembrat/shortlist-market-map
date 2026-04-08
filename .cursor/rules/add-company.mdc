@@ -12,22 +12,24 @@ When the user asks to add a company to the market map, follow these steps:
 
 The user will provide some or all of:
 - **Company name** (required)
-- **Sector** (required) — must be one of: Consumer, Infrastructure, Data & Analytics, Enterprise: Horizontal, Enterprise: Vertical, Security, Prosumer, Robotics, DevOps & MLOps, Agents
-- **Category** (required) — must match an existing category within the chosen sector (see list below)
-- **Shortlist URL** (optional) — defaults to `https://shortlistjobs.com/companies/{slug}` where slug is the lowercased, hyphenated company name
+- **Sector** (required) — must be one of the valid sectors below
+- **Category** (required) — must match a category within the chosen sector
+- **Shortlist UUID** (required) — the company's UUID for the drops URL
 
 ## Valid Sectors and Categories
 
-- **Consumer**: Entertainment, Social, Music, Education, Gaming
-- **Infrastructure**: Models, Compute, Vector DBs
-- **Data & Analytics**: Data Ops, BI & Insights, Analytics
-- **Enterprise: Horizontal**: Sales, Marketing, Design, Engineering
-- **Enterprise: Vertical**: Healthcare, Legal, Finance
-- **Security**: AI Safety, Privacy, Compliance
+- **Consumer**: Entertainment, Social, Gaming, E-Commerce, Marketplace, Lifestyle, Media
+- **Enterprise: Horizontal**: Sales, Marketing, Design, Engineering, Productivity, HR & Hiring, Ops & Workflow
+- **Infrastructure**: Models, Compute, Cloud, Networking, DevTools
+- **Enterprise: Vertical**: Healthcare, Legal, Finance, Government, Real Estate, Construction
+- **Hardware & Deep Tech**: Space, Energy, Vehicles, Quantum, Biotech
+- **Fintech**: Trading, Payments, Insurtech, Lending
+- **Security**: AI Safety, Privacy, Compliance, Cybersecurity, Identity
+- **Data & Analytics**: Data Ops, Analytics, Research, Financial Data
+- **Agents**: Coding, Task Automation, Customer
 - **Prosumer**: Search, Video, Image, 3D & AR
 - **Robotics**: Humanoid, Industrial, Autonomous
 - **DevOps & MLOps**: ML Platform, Deployment, Monitoring
-- **Agents**: Coding, Task Automation, Customer
 
 ## Steps
 
@@ -38,7 +40,7 @@ The user will provide some or all of:
      "name": "Company Name",
      "sector": "Sector Name",
      "category": "Category Name",
-     "shortlistUrl": "https://shortlistjobs.com/companies/company-slug"
+     "shortlistUrl": "https://shortlistjobs.com/drops/UUID"
    }
    ```
 3. Insert the entry in the correct position — group it with other companies in the same sector and category
@@ -46,13 +48,8 @@ The user will provide some or all of:
 
 ## Example Prompt
 
-> Add company: Anthropic, Infrastructure, Models, https://shortlistjobs.com/companies/anthropic
+> Add company: Anthropic, Infrastructure, Models, c01a830d-2457-42b0-85c5-9e3ae2d09706
 
 ## Bulk Add
 
 Users may provide multiple companies at once. Add each one following the same rules.
-
-> Add companies:
-> - Notion AI, Enterprise: Horizontal, Engineering
-> - Vercel, Infrastructure, Compute
-> - Scale AI, Data & Analytics, Data Ops
