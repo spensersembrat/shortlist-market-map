@@ -44,8 +44,8 @@ export default async function SectorPage({
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
-      <main className="flex-1 pt-14 md:pt-20">
+      {/* <Header /> */}
+      <main className="flex-1">
         <section className="mx-auto w-full max-w-[1280px] 2xl:max-w-[1536px] px-4 md:px-6 pt-12 pb-6">
           <Link
             href="/"
@@ -140,7 +140,7 @@ export default async function SectorPage({
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -102,8 +102,8 @@ export default function Home() {
   return (
     <ViewContext.Provider value={viewCtx}>
       <div className="flex min-h-screen flex-col">
-        <Header />
-        <main className="flex-1 pt-14 md:pt-20">
+        {/* <Header /> */}
+        <main className="flex-1">
           <Hero />
           <Toolbar
             searchQuery={searchQuery}
@@ -118,7 +118,7 @@ export default function Home() {
           <HeatmapLegend visible={viewToggles.heatmap} />
           <CategoryGrid companies={filteredCompanies} />
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
 
       {viewToggles.timeline && (
