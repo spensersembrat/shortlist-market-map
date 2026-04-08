@@ -18,18 +18,18 @@ The user will provide some or all of:
 
 ## Valid Sectors and Categories
 
-- **Consumer**: Entertainment, Social, Gaming, E-Commerce, Marketplace, Lifestyle, Media
-- **Enterprise: Horizontal**: Sales, Marketing, Design, Engineering, Productivity, HR & Hiring, Ops & Workflow
-- **Infrastructure**: Models, Compute, Cloud, Networking, DevTools
-- **Enterprise: Vertical**: Healthcare, Legal, Finance, Government, Real Estate, Construction
-- **Hardware & Deep Tech**: Space, Energy, Vehicles, Quantum, Biotech
-- **Fintech**: Trading, Payments, Insurtech, Lending
-- **Security**: AI Safety, Privacy, Compliance, Cybersecurity, Identity
-- **Data & Analytics**: Data Ops, Analytics, Research, Financial Data
-- **Agents**: Coding, Task Automation, Customer
-- **Prosumer**: Search, Video, Image, 3D & AR
-- **Robotics**: Humanoid, Industrial, Autonomous
-- **DevOps & MLOps**: ML Platform, Deployment, Monitoring
+- **AI & Models**: Foundation Models, Voice & Audio, Vision & Video, AI Research, AI Tools
+- **Enterprise Software**: Productivity, Operations, HR & People, Legal Tech, Hospitality
+- **Consumer & Marketplace**: E-Commerce, Marketplace, Social, Lifestyle, Food & Drink
+- **Developer Tools**: Dev Platforms, API & SDKs, Cloud & Infra, Networking
+- **Healthcare & Biotech**: Clinical & Care, Biotech, Health Insurance, Medical Devices
+- **Media & Marketing**: Advertising, Media & Content, Creator Tools, Marketing Tech
+- **Hardware & Robotics**: Robotics, Vehicles & Mobility, Space, Quantum & Computing
+- **Fintech**: Trading & Capital Markets, Payments & Lending, Insurance, Financial Data
+- **Security & Privacy**: Cybersecurity, Privacy & Identity, AI Safety
+- **Automation & Agents**: AI Agents, Conversational AI, Workflow Automation
+- **Defense & Government**: Defense, Gov Tech, Policy & Research
+- **Energy & Climate**: Energy, Materials & Mining
 
 ## Steps
 
@@ -48,7 +48,7 @@ The user will provide some or all of:
 
 ## Example Prompt
 
-> Add company: Anthropic, Infrastructure, Models, c01a830d-2457-42b0-85c5-9e3ae2d09706
+> Add company: Anthropic, AI & Models, Foundation Models, c01a830d-2457-42b0-85c5-9e3ae2d09706
 
 ## Bulk Add
 

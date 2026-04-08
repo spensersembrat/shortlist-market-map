@@ -196,10 +196,17 @@ export default function Toolbar({
         {SECTOR_ORDER.map((sector) => {
           const active = filters.sectors.includes(sector);
           const short = sector
-            .replace("Enterprise: ", "")
-            .replace("Data & Analytics", "Data")
-            .replace("DevOps & MLOps", "DevOps")
-            .replace("Hardware & Deep Tech", "Hardware");
+            .replace("Consumer & Marketplace", "Consumer")
+            .replace("Healthcare & Biotech", "Healthcare")
+            .replace("Hardware & Robotics", "Hardware")
+            .replace("Security & Privacy", "Security")
+            .replace("Automation & Agents", "Agents")
+            .replace("Defense & Government", "Defense")
+            .replace("Energy & Climate", "Energy")
+            .replace("Media & Marketing", "Media")
+            .replace("AI & Models", "AI")
+            .replace("Developer Tools", "DevTools")
+            .replace("Enterprise Software", "Enterprise");
           return (
             <button
               key={sector}
